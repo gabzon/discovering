@@ -11,6 +11,14 @@ class App extends Controller
         return get_bloginfo('name');
     }
 
+    public function logoUrl()
+    {
+      $options = get_option('my_theme_settings');
+      $image_id = $options['discovering_logo_image'];
+      $logo_url = wp_get_attachment_image_src($image_id[0],'full');
+      return $logo_url[0];
+    }
+
     public static function title()
     {
         if (is_home()) {
