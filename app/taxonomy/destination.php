@@ -37,7 +37,7 @@ function destination_taxonomy() {
 		'show_tagcloud'              => true,
 		'show_in_rest'               => true,
 	);
-	register_taxonomy( 'destination', array( 'post', ' place' ), $args );
+	register_taxonomy( 'destination', array( 'post', ' place', 'hosting' ), $args );
 
 }
 add_action( 'init', 'destination_taxonomy', 0 );
