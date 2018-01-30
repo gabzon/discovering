@@ -6,7 +6,8 @@ Template Name: Homepage
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    <header class="masthead text-center text-white d-flex" style="background-image: url('http://localhost/discoveringvenezuela/web/app/themes/discovering/dist/images/jungle.jpg')">
+    @php( $cover_image = get_template_directory_uri() . "/assets/images/jungle.jpg")    
+    <header class="masthead text-center text-white d-flex" style="background-image: url({{$cover_image}})">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-8 mx-auto">
