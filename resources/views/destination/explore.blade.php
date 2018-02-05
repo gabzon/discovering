@@ -30,7 +30,9 @@ $places = new WP_Query( $args );
               <a href="{{ get_the_permalink() }}">
                 <h5 class="card-title">{{ get_the_title() }}</h5>
               </a>
-              <p class="card-text">{{ get_the_excerpt() }}</p>
+              <p class="card-text">
+                @php( the_excerpt())
+              </p>
               {{-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
             </div>
           </div>

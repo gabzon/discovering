@@ -26,10 +26,13 @@
         font-size: 0.9rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: $gray-900;
+        // color: $gray-900;
+        color: $primary;
 
         &:hover {
-          color: $primary;
+          // color: $primary;
+          color: red;
+          // color: darken($primary, 0.1);
         }
 
         &.active {

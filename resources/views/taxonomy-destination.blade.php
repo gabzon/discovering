@@ -6,14 +6,14 @@
   <div class="row">
     <div class="col-12 col-sm-12 col-md-5 col-lg-5">
       <div class="bt bw2 mb3 mt1"></div>
-      <h2 class="garamond pb2">{{ single_term_title() }}</h2>
+      <h2 class="avenir pb2">{{ single_term_title() }}</h2>
       @php( $img_id = get_term_meta( $id, 'destination_images', true) )
-      <img src="{{ wp_get_attachment_url( $img_id ) }}" alt="" class="img-fluid">
-      <br><br>
-      <a href="#" class="btn btn-outline-primary">
-        Gallery
-      </a>
-      <br>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="{{ wp_get_attachment_url( $img_id ) }}" alt="Card image">
+          <div class="card-img-overlay">
+            <h5 class="card-title btn btn-outline-light avenir grow" style="position:absolute; bottom:10px;"><i class="far fa-images"></i> Galeria de fotos</h5>
+          </div>
+      </div>
     </div>
     <div class="col-12 col-sm-12 col-md-7 col-lg-7 avenir text-justify">
       <br><br><br>

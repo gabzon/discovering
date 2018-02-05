@@ -19,7 +19,7 @@ Template Name: Homepage
             <strong>El paraiso perdido!</strong>
           </h1>
           <br><br>
-          <a class="btn btn-primary btn-xl js-scroll-trigger mb-5 white" href="{{ get_permalink( get_page_by_title( 'destinos' ) ) }}">Descubre mas</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger mb-5" style="color:white" href="{{ get_permalink( get_page_by_title( 'destinos' ) ) }}">Descubre mas</a>
         </div>
         <br>
         <span class="i f6 light-gray">Photo by Jorge Illich-Gejo on Unsplash</span>
