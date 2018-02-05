@@ -6,7 +6,7 @@ Template Name: Homepage
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    @php( $cover_image = get_template_directory_uri() . "/assets/images/jungle.jpg")    
+    @php( $cover_image = get_template_directory_uri() . "/assets/images/jungle.jpg")
     <header class="masthead text-center text-white d-flex" style="background-image: url({{$cover_image}})">
       <div class="container my-auto">
         <div class="row">
@@ -19,7 +19,7 @@ Template Name: Homepage
             <strong>El paraiso perdido!</strong>
           </h1>
           <br><br>
-          <a class="btn btn-primary btn-xl js-scroll-trigger mb-5" href="{{ get_permalink( get_page_by_title( 'destinos' ) ) }}">Descubre mas</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger mb-5 white" href="{{ get_permalink( get_page_by_title( 'destinos' ) ) }}">Descubre mas</a>
         </div>
         <br>
         <span class="i f6 light-gray">Photo by Jorge Illich-Gejo on Unsplash</span>
