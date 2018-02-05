@@ -15,24 +15,28 @@ $places = new WP_Query( $args );
 
 
 @if ($places->have_posts())
-  <div class="container-fluid p-0">
+  <section id="destination-explore" class="container-fluid p-0">
     <div class="row pl1">
       @while ($places->have_posts() )
         @php( $places->the_post() )
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <a href="{{ get_the_permalink() }}">
-            <div class="card text-center grow">
-              <img class="card-img-top" src="{{ wp_get_attachment_url(get_post_thumbnail_id()) }}" alt="Card image cap">
-              <div class="card-body">
+          <div class="card text-center grow">
+            @if (wp_get_attachment_url(get_post_thumbnail_id()))
+              <a href="{{ get_the_permalink() }}">
+                <img class="card-img-top" src="{{ wp_get_attachment_url(get_post_thumbnail_id()) }}" alt="Card image cap">
+              </a>
+            @endif
+            <div class="card-body">
+              <a href="{{ get_the_permalink() }}">
                 <h5 class="card-title">{{ get_the_title() }}</h5>
-                <p class="card-text">{{ get_the_excerpt() }}</p>
-                {{-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
-              </div>
+              </a>
+              <p class="card-text">{{ get_the_excerpt() }}</p>
+              {{-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
             </div>
-          </a>
-        </div>
-      @endwhile
-    </div>
+          </div>
+        </a>
+      </div>
+    @endwhile
   </div>
 </section>
 @else

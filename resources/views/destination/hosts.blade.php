@@ -15,7 +15,7 @@ $places = new WP_Query( $args );
 
 
 @if ($places->have_posts())
-  <div class="container-fluid p-0">
+  <section id="destination-host" class="container-fluid p-0">
     <table class="table table-hover">
       <thead>
         <tr>
@@ -41,9 +41,7 @@ $places = new WP_Query( $args );
         </tbody>
       @endwhile
     </table>
-    </div>
-  </div>
-</section>
+  </section>
 @else
   {{-- no posts found --}}
   nothing

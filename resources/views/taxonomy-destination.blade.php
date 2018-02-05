@@ -24,34 +24,39 @@
   </div>
   <br>
   <section class="places explore">
-    <ul class="nav nav-pills mb-3 nav-justified avenir ttu" id="pills-tab" role="tablist">
+    <ul class="nav nav-tabs nav-justified avenir ttu" id="myTab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active ba mh2 pv2 grow" id="pills-explore-tab" data-toggle="pill" href="#pills-explore" role="tab" aria-controls="pills-explore" aria-selected="true">Explora</a>
+        <a class="nav-link active" id="explore-tab" data-toggle="tab" href="#explore" role="tab" aria-controls="explore" aria-selected="true">Explore</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ba mh2 pv2 grow" id="pills-hosts-tab" data-toggle="pill" href="#pills-hosts" role="tab" aria-controls="pills-hosts" aria-selected="false">Alojamiento</a>
+        <a class="nav-link" id="host-tab" data-toggle="tab" href="#host" role="tab" aria-controls="host" aria-selected="false">Alojamiento</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ba mh2 pv2 grow" id="pills-food-drink-tab" data-toggle="pill" href="#pills-food-drink" role="tab" aria-controls="pills-food-drink" aria-selected="false">Comidas & Bebidas</a>
+        <a class="nav-link" id="food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="food" aria-selected="false">Comida</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link ba mh2 pv2 grow" id="pills-tradition-tab" data-toggle="pill" href="#pills-tradition" role="tab" aria-controls="pills-tradition" aria-selected="false">Tradiciones</a>
+        <a class="nav-link" id="traditions-tab" data-toggle="tab" href="#traditions" role="tab" aria-controls="traditions" aria-selected="false">Traditions</a>
       </li>
     </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-explore" role="tabpanel" aria-labelledby="pills-explore-tab">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="explore" role="tabpanel" aria-labelledby="explore-tab">
+        <br>
         @include('destination/explore')
       </div>
-      <div class="tab-pane fade" id="pills-hosts" role="tabpanel" aria-labelledby="pills-hosts-tab">
+      <div class="tab-pane fade" id="host" role="tabpanel" aria-labelledby="host-tab">
+        <br>
         @include('destination/hosts')
       </div>
-      <div class="tab-pane fade" id="pills-food-drink" role="tabpanel" aria-labelledby="pills-food-drink-tab">
-        @include('destination/food-drinks')
+      <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="food-tab">
+        <br>
+        food
       </div>
-      <div class="tab-pane fade" id="pills-tradition" role="tabpanel" aria-labelledby="pills-tradition-tab">
-        @include('destination/traditions')
+      <div class="tab-pane fade" id="traditions" role="tabpanel" aria-labelledby="traditions-tab">
+        <br>
+        traditiones
       </div>
     </div>
+    <br>
   </section>
 
 @endsection

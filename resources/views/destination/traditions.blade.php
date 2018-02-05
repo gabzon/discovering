@@ -15,7 +15,7 @@ $places = new WP_Query( $args );
 
 
 @if ($places->have_posts())
-  <div class="container-fluid p-0">
+  <section id="destination-tradition" class="container-fluid p-0">
     <div class="row pl1">
       @while ($places->have_posts() )
         @php( $places->the_post() )
@@ -33,8 +33,7 @@ $places = new WP_Query( $args );
         </div>
       @endwhile
     </div>
-  </div>
-</section>
+  </section>
 @else
   {{-- no posts found --}}
   nothing
