@@ -1,5 +1,6 @@
 {
   "images/header.jpg": "images/header_fb7e411a.jpg",
+  "images/image-unavailable.jpg": "images/image-unavailable_154e5d77.jpg",
   "images/jungle.jpg": "images/jungle_144aab06.jpg",
   "images/portfolio/fullsize/1.jpg": "images/portfolio/fullsize/1_35fc9782.jpg",
   "images/portfolio/fullsize/2.jpg": "images/portfolio/fullsize/2_291ec430.jpg",
@@ -14,7 +15,7 @@
   "images/portfolio/thumbnails/5.jpg": "images/portfolio/thumbnails/5_edb6acef.jpg",
   "images/portfolio/thumbnails/6.jpg": "images/portfolio/thumbnails/6_61db5908.jpg",
   "images/turismobolivar-logo.png": "images/turismobolivar-logo_768e1a11.png",
-  "scripts/customizer.js": "scripts/customizer_355ac8b2.js",
-  "styles/main.css": "styles/main_355ac8b2.css",
-  "scripts/main.js": "scripts/main_355ac8b2.js"
+  "scripts/customizer.js": "scripts/customizer_9c9952bc.js",
+  "styles/main.css": "styles/main_9c9952bc.css",
+  "scripts/main.js": "scripts/main_9c9952bc.js"
 }

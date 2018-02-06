@@ -7,13 +7,29 @@
     <div class="col-12 col-sm-12 col-md-5 col-lg-5">
       <div class="bt bw2 mb3 mt1"></div>
       <h2 class="avenir pb2">{{ single_term_title() }}</h2>
-      @php( $img_id = get_term_meta( $id, 'destination_images', true) )
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{ wp_get_attachment_url( $img_id ) }}" alt="Card image">
-          <div class="card-img-overlay">
-            <h5 class="card-title btn btn-outline-light avenir grow" style="position:absolute; bottom:10px;"><i class="far fa-images"></i> Galeria de fotos</h5>
+      @php( $img_ids = get_term_meta( $id, 'destination_images'))
+      {{-- array_rand() picks ramdomly an element for the array, in this case a random image --}}
+      @php( $random_img = array_rand($img_ids, 1) )
+      <a href="{{ wp_get_attachment_url( $img_ids[$random_img] ) }}" data-fancybox="group">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="{{ wp_get_attachment_url( $img_ids[$random_img] ) }}" alt="Card image">
+          <div class="card-img-overlay hover-bg-black-40">
+            <h5 class="card-title btn btn-outline-light avenir" style="position:absolute; bottom:10px;">
+              <i class="far fa-images"></i> Galeria de fotos
+            </h5>
           </div>
+        </div>
+      </a>
+      <div style="display: none;">
+        @if( $img_ids )
+          @foreach ( $img_ids as $id )
+            <a href="{{ wp_get_attachment_image_url($id, 'full') }}" data-fancybox="group">
+              <img src="{{ wp_get_attachment_image_url($id, 'full') }}" class="img-fluid" alt="Gallery image" />
+            </a>
+          @endforeach
+        @endif
       </div>
+      <br>
     </div>
     <div class="col-12 col-sm-12 col-md-7 col-lg-7 avenir text-justify">
       <br><br><br>
