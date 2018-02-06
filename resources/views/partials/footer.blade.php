@@ -1,4 +1,4 @@
-<section class="content-info footer" id="contact">
+<section class="content-info footer mt5" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
