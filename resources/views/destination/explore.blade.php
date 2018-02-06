@@ -19,7 +19,7 @@ $places = new WP_Query( $args );
       @while ($places->have_posts() )
         @php( $places->the_post() )
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="card text-center grow">
+          <div class="card text-center grow mv2">
             @if (wp_get_attachment_url(get_post_thumbnail_id()))
               <a href="{{ get_the_permalink() }}">
                 <img class="card-img-top" src="{{ wp_get_attachment_url(get_post_thumbnail_id()) }}" alt="Card image cap">
