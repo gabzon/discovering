@@ -22,9 +22,9 @@
           </div>
         </a>
         <div style="display: none;">
-          @foreach ( $img_ids as $id )
-            <a href="{{ wp_get_attachment_image_url($id, 'full') }}" data-fancybox="group">
-              <img src="{{ wp_get_attachment_image_url($id, 'full') }}" class="img-fluid" alt="Gallery image" />
+          @foreach ( $img_ids as $the_id )
+            <a href="{{ wp_get_attachment_image_url($the_id, 'full') }}" data-fancybox="group">
+              <img src="{{ wp_get_attachment_image_url($the_id, 'full') }}" class="img-fluid" alt="Fancy image" />
             </a>
           @endforeach
         </div>

@@ -13,7 +13,6 @@ $args = [
 $places = new WP_Query( $args );
 @endphp
 
-
 @if ($places->have_posts())
   <section id="destination-explore" class="container-fluid p-0">
     <div class="row pl1">
