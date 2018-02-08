@@ -13,20 +13,46 @@ Make sure all dependencies have been installed before moving on:
 * [Piklist](http://nodejs.org/) >= 6.9.x
 * [Yarn](https://yarnpkg.com/en/docs/install)
 
-## Features
+## Discovering project
 
-* Manage lists of:  
-  * Places (Cities, towns and/or any location in a map)
-  * Explore (Things to do, POIs, Squares, Monuments)
-  * Services (Restaurants, Bars, Exchange houses, Tourist information)
-  * Hotels (blank slate)
-* Sass for stylesheets
-* ES6 for JavaScript
-* [Webpack](https://webpack.github.io/) for compiling assets, optimizing images, and concatenating and minifying files
-* [Browsersync](http://www.browsersync.io/) for synchronized browser testing
-* [Laravel Blade](https://laravel.com/docs/5.3/blade) as a templating engine
-* [Controller](https://github.com/soberwp/controller) for passing data to Blade templates
-* Font Awesome (optional)
+Our mission is to promote, share and educate people about a particular country or region. We collect historical facts, touristic and cultural information (data) about a particular country or a region and we share it to the world. We want to help places recover and preserve the history, traditions and culture of every country because we believe it is the basis of our society which help us shape our values.
 
+* Promote tourism of a country/region nationaly and internationally
+* Recover, preserve and educate the history and culture of a place to its people and to foreigners
+* Research, Analyse, Design, Improve the tourist ecosystem of the country/region
+* Help integrate sustainables process to reduce CO2 impact on the environment
 
-### Version 0.0.1
+Tourist information
+* General Information
+* Destinations
+* Places
+  * Points of Interest
+  * Museums and Galleries
+* Hosting
+  * Hotels
+* Transportation
+  * Aiports
+  * Bus & train stations
+  * Ports
+  * Taxis
+* Tourist Services
+* Restaurants
+
+Cutural Information
+* Facts
+* Food
+* Drinks
+* Dances
+* Music
+* Traditions
+* Holidays
+* History
+* Events
+
+Recover past history
+
+Define and promote values
+
+-	Destinations
+
+Hotels :

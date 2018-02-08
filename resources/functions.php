@@ -68,7 +68,6 @@ array_map(function ($file) use ($sage_error) {
   'post-type/destination',
   'post-type/place',
   'post-type/hosting',
-  'post-type/location'
 ]);
 
 /**

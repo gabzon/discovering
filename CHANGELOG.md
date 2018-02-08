@@ -11,16 +11,16 @@
 * Fix Popper for Bootstrap 4 ([#1946](https://github.com/roots/sage/pull/1946))
 
 ### 0.0.2: Saturday 20th, 2018
-<!-- * homepage: fixe menu -->
+
 <!-- * create social media accounts, associate with social media links -->
 <!-- * homepage: change english text, put another text, in spanish -->
 <!-- * homepage: associate buttons with pages -->
 <!-- * homepage: add logo in the footer section of the page -->
 <!-- * Admin > Settings: Integrate social media tab -->
 <!-- * Destinos template: Display featured image in grid -->
-<!-- * Destinos template > grid: Increase image size on hover -->
-<!-- * Design: Change fonts & sizes -->
-
+* Destinos template > grid: Increase image size on hover
+* Design: Change fonts & sizes
+* homepage: fixe menu
 * homepage: adapt portofolio images with places images
 * homepage: increase size of icons on hover
 * Places Custom post type added
