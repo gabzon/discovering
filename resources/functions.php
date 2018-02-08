@@ -61,6 +61,8 @@ array_map(function ($file) use ($sage_error) {
 }, [
   'helpers', 'setup', 'filters', 'admin', 'walker',
   'piklist',
+  'list-filters/host-filter',
+  'list-filters/place-filter',
   'taxonomy/destination',
   'taxonomy/facility',
   'post-type/destination',

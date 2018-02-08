@@ -48,10 +48,7 @@
         <a class="nav-link" id="host-tab" data-toggle="tab" href="#host" role="tab" aria-controls="host" aria-selected="false">Alojamiento</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="food" aria-selected="false">Comida</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="traditions-tab" data-toggle="tab" href="#traditions" role="tab" aria-controls="traditions" aria-selected="false">Traditions</a>
+        <a class="nav-link" id="food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="food" aria-selected="false">Cultura</a>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
@@ -65,11 +62,7 @@
       </div>
       <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="food-tab">
         <br>
-        food
-      </div>
-      <div class="tab-pane fade" id="traditions" role="tabpanel" aria-labelledby="traditions-tab">
-        <br>
-        traditiones
+        @include('destination/culture')
       </div>
     </div>
     <br>
