@@ -39,7 +39,7 @@
           <a href="{{ get_permalink( get_page_by_title( 'transporte' ) ) }}">
             <h3 class="mb-3">Mobilidad & Transporte</h3>
           </a>
-          <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+          <p class="text-muted mb-0">Información referente a los medios de transporte de nuestro estado</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">

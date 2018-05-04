@@ -11,7 +11,7 @@ Template Name: Homepage
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <span class="text-faded i f2">Bienvenidos a Bolivar</span>
+            <span class="text-faded i f2">Bienvenidos a Bolívar</span>
           </div>
         </div>
         <div class="col-lg-10 mx-auto">
@@ -30,10 +30,10 @@ Template Name: Homepage
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
+            <h2 class="section-heading text-white">Toda la informacion que necesitas!</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            <p class="text-faded mb-4">Turismo Bolívar tiene como mision de promover el turismo y la cultura del estado Bolívar a nivel nacional e internacional, con el proposito de recuperar y resguardar nuestra historia, tradiciones, arte, musica y comida para pasarlas a las generaciones futuras</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="/blog/">Empezar!</a>
           </div>
         </div>
       </div>
