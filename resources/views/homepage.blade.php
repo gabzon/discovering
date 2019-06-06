@@ -41,7 +41,14 @@ Template Name: Homepage
 
     @include('partials/icons')
 
+    <br><br><br>
+    <div class="">
+      @include('components/grid')
+    </div>
+
     @include('partials/portfolio')
+
+
 
     <section class="bg-dark text-white">
       <div class="container text-center">
